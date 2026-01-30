@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 50px;
+}
+
+.question {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+.chair-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.chair {
+  display: inline-block;
+  width: 36px;
+  text-align: center;
+}
+
+.avatar {
+  position: absolute;
+  top: 0;
+  font-size: 28px;
+  transition: transform 0.6s ease-in-out;
+}
+
+
