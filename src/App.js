@@ -21,7 +21,7 @@ export default function App() {
   useEffect(() => {
     if (wsRef.current) return;
 
-    const socket = new WebSocket("ws://localhost:8080");
+    const socket = new WebSocket("wss://relationship-mirror-game-backend.onrender.com");
     wsRef.current = socket;
 
     socket.onopen = () => {
@@ -128,7 +128,7 @@ export default function App() {
     };
 
     setWs(socket);
-  }, []);
+  }, [avatar, status]);
 
   // -------------------------------
   // SAFE SEND FUNCTION
